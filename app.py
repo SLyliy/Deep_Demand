@@ -3711,14 +3711,6 @@ def index() -> object:
     return response
 
 
-@app.get("/intro")
-@app.get("/intro.html")
-def intro() -> object:
-    response = send_file(BASE_DIR / "intro.html", mimetype="text/html; charset=utf-8")
-    response.headers["Cache-Control"] = "no-store, no-cache, must-revalidate, max-age=0"
-    return response
-
-
 @app.get("/health")
 def health() -> object:
     return jsonify({"status": "ok", "llm_enabled": llm_enabled()})
