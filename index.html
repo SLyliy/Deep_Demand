@@ -1,9 +1,9 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>???????</title>
+<title>一句话需求报告</title>
 <style>
   *{margin:0;padding:0;box-sizing:border-box}
   body{font-family:'Microsoft YaHei','PingFang SC',sans-serif;background:#f5f6f8;color:#2c3e50;line-height:1.5;font-size:14px}
@@ -132,7 +132,7 @@
   }
 
 
-  /* ===== MVP????????????????demo??? ===== */
+  /* ===== MVP前台提需入口：新增样式（不影响原demo样式） ===== */
   .mvp-panel{background:#fff;border-radius:10px;padding:18px 20px;border:1px solid #e8ecf0;margin-bottom:16px;box-shadow:0 2px 8px rgba(1,118,211,0.04)}
   .mvp-panel .sec-hd{margin-bottom:8px}
   .mvp-intro{font-size:13px;color:#667085;line-height:1.7;margin-bottom:12px;background:#f8fbff;border-left:3px solid #0176d3;border-radius:6px;padding:10px 12px}
@@ -151,7 +151,7 @@
   .mvp-ai-popup-icon{width:42px;height:42px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;flex:0 0 auto;background:#e8f0fe;color:#0176d3;font-weight:800}
   .mvp-ai-popup.thinking .mvp-ai-popup-icon:before{content:"";width:20px;height:20px;border-radius:50%;border:3px solid #bfdbfe;border-top-color:#0176d3;animation:mvpSpin .85s linear infinite}
   .mvp-ai-popup.success .mvp-ai-popup-icon{background:#e8f7ee;color:#17803d}
-  .mvp-ai-popup.success .mvp-ai-popup-icon:before{content:"?";font-size:22px;line-height:1}
+  .mvp-ai-popup.success .mvp-ai-popup-icon:before{content:"✓";font-size:22px;line-height:1}
   .mvp-ai-popup.error .mvp-ai-popup-icon{background:#fdecec;color:#c62828}
   .mvp-ai-popup.error .mvp-ai-popup-icon:before{content:"!";font-size:22px;line-height:1;font-weight:900}
   .mvp-ai-popup-title{font-size:17px;font-weight:800;color:#1e293b;line-height:1.35;margin-bottom:6px}
@@ -205,7 +205,7 @@
   .mvp-quality-note{display:inline-flex;align-items:center;margin-left:8px;padding:5px 9px;border-radius:999px;background:#fff7ed;color:#c2410c;border:1px solid #fed7aa;font-size:12px;font-weight:700}
   .mvp-result-goal{background:#fff;border-radius:8px;padding:12px;border-left:3px solid #0176d3}
   .mvp-result-label{font-size:12px;font-weight:700;color:#0176d3;margin-bottom:6px}
-  .mvp-result-text{font-size:14px;color:#2c3e50;line-height:1.7}
+  .mvp-result-text{font-size:14px;color:#2c3e50;line-height:1.7}
   .mvp-home-preview{display:none;margin-top:14px;background:#f8fbff;border:1px solid #bfdbfe;border-radius:12px;padding:14px}
   .mvp-home-preview.show{display:block}
   .mvp-home-preview-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:10px}
@@ -978,7 +978,7 @@
   .prd-table tr:nth-child(even) td{background:#fbfdff}
 
   .prd-actions .solution-btn.primary:before{
-    content:"?";
+    content:"↓";
     display:inline-flex;
     align-items:center;
     justify-content:center;
@@ -991,7 +991,7 @@
     line-height:1;
   }
   .prd-actions .solution-btn.secondary:before{
-    content:"?";
+    content:"⧉";
     margin-right:6px;
     color:var(--primary);
   }
@@ -1005,7 +1005,7 @@
     place-items:center;
   }
   .prd-doc:empty:after{
-    content:"PRD ???????????";
+    content:"PRD 文档生成后将在这里展示";
     padding:10px 14px;
     border-radius:999px;
     background:var(--surface-soft);
@@ -1043,10 +1043,10 @@
 <header class="app-nav">
   <div class="app-nav-inner">
     <div class="app-brand"><div class="app-brand-mark">AI</div><span>Deep Demand</span></div>
-    <nav class="app-nav-links" aria-label="???">
-      <button type="button" class="app-nav-link active" data-view-target="submission">????</button>
-      <button type="button" class="app-nav-link" data-view-target="itbp">ITBP??</button>
-      <button type="button" class="app-nav-link" data-view-target="solution">PRD ??</button>
+    <nav class="app-nav-links" aria-label="主导航">
+      <button type="button" class="app-nav-link active" data-view-target="submission">需求提交</button>
+      <button type="button" class="app-nav-link" data-view-target="itbp">ITBP分析</button>
+      <button type="button" class="app-nav-link" data-view-target="solution">PRD 生成</button>
     </nav>
   </div>
 </header>
@@ -1057,128 +1057,128 @@
     <div class="submit-hero-top">
       <div>
         <div class="submit-eyebrow">AI Requirement Intake</div>
-        <h1 class="submit-title">??????????AI ????????</h1>
-        <p class="submit-desc">??????????????????????????????????????? ITBP ?????????</p>
+        <h1 class="submit-title">一句话提交业务需求，AI 帮你补齐关键信息</h1>
+        <p class="submit-desc">用自然语言描述现场问题即可。系统会先判断业务场景，再生成少量场景化澄清项，帮助 ITBP 更快理解真实诉求。</p>
       </div>
-      <div class="submit-status-pill"><span class="submit-status-dot"></span>?????</div>
+      <div class="submit-status-pill"><span class="submit-status-dot"></span>业务提交页</div>
     </div>
-    <div class="submit-steps" aria-label="??????">
-      <div class="submit-step active"><div class="submit-step-num">1</div><div class="submit-step-title">????</div><div class="submit-step-text">?????????</div></div>
-      <div class="submit-step"><div class="submit-step-num">2</div><div class="submit-step-title">AI ??</div><div class="submit-step-text">????????</div></div>
-      <div class="submit-step"><div class="submit-step-num">3</div><div class="submit-step-title">????</div><div class="submit-step-text">???????</div></div>
-      <div class="submit-step"><div class="submit-step-num">4</div><div class="submit-step-title">ITBP ??</div><div class="submit-step-text">????????</div></div>
+    <div class="submit-steps" aria-label="需求提交步骤">
+      <div class="submit-step active"><div class="submit-step-num">1</div><div class="submit-step-title">输入原话</div><div class="submit-step-text">先把现场问题说出来</div></div>
+      <div class="submit-step"><div class="submit-step-num">2</div><div class="submit-step-title">AI 澄清</div><div class="submit-step-text">点选场景化补充项</div></div>
+      <div class="submit-step"><div class="submit-step-num">3</div><div class="submit-step-title">确认提交</div><div class="submit-step-text">生成可提交版本</div></div>
+      <div class="submit-step"><div class="submit-step-num">4</div><div class="submit-step-title">ITBP 分析</div><div class="submit-step-text">后台继续深度诊断</div></div>
     </div>
   </div>
 
-  <!-- ===== MVP??????????? ===== -->
+  <!-- ===== MVP前台提需入口：新增模块 ===== -->
   <div class="mvp-panel" id="mvp-input-panel">
-    <div class="sec-hd sec-hd-right"><span class="badge">AI</span>?????????</div>
+    <div class="sec-hd sec-hd-right"><span class="badge">AI</span>一句话需求澄清入口</div>
     <div class="mvp-intro">
-      ????????AI ???????????????????????????????????
+      先随意写一句话。AI 会直接深挖背后的真实诉求，给出三维判断、建议提交版本和少量快速选择项。
     </div>
-    <textarea id="userRequestInput" class="mvp-textarea" placeholder="????????????????????????SAP?????????BOM?????????????????"></textarea>
+    <textarea id="userRequestInput" class="mvp-textarea" placeholder="例如：采购交付压力很大，需要减轻人工压力，需要在SAP中生成一张自动计算BOM用量的报表且自动发给采购执行的同学"></textarea>
     <div class="mvp-actions">
-      <button id="startClarifyBtn" class="mvp-btn primary" onclick="startClarify()">AI ????</button>
-      <button class="mvp-btn secondary" onclick="fillDemoExample()">????</button>
-      <button class="mvp-btn gray" onclick="resetMvpDemo()">??????</button>
+      <button id="startClarifyBtn" class="mvp-btn primary" onclick="startClarify()">AI 深挖需求</button>
+      <button class="mvp-btn secondary" onclick="fillDemoExample()">填入示例</button>
+      <button class="mvp-btn gray" onclick="resetMvpDemo()">恢复初始示例</button>
     </div>
     <div id="mvpStatus" class="mvp-status"></div>
   </div>
 
   <div class="mvp-panel" id="mvp-clarify-panel" style="display:none">
-    <div class="sec-hd sec-hd-mid"><span class="badge">Q</span>AI ???????</div>
+    <div class="sec-hd sec-hd-mid"><span class="badge">Q</span>AI 理解与快速确认</div>
     <div class="mvp-grid">
       <div class="mvp-ai-box">
-        <div class="mvp-ai-title">AI ????????</div>
+        <div class="mvp-ai-title">AI 对需求的初步理解</div>
         <div id="requirementTypeBox" class="mvp-type-box"></div>
         <div id="aiUnderstandingText" class="mvp-ai-text"></div>
         <div class="mvp-insight-box">
-          <div class="mvp-ai-title">AI ????</div>
+          <div class="mvp-ai-title">AI 三维判断</div>
           <div id="threeDimSummaryText" class="mvp-insight-summary"></div>
           <div class="mvp-insight-row">
-            <label class="mvp-insight-label" for="threeDimDomainSelect">???</label>
+            <label class="mvp-insight-label" for="threeDimDomainSelect">业务域</label>
             <select id="threeDimDomainSelect" class="mvp-insight-select"></select>
           </div>
           <div class="mvp-insight-row">
-            <span class="mvp-insight-label">????</span>
+            <span class="mvp-insight-label">痛点类型</span>
             <div id="painOptionList" class="mvp-check-group"></div>
           </div>
           <div class="mvp-insight-row">
-            <span class="mvp-insight-label">????</span>
+            <span class="mvp-insight-label">系统动作</span>
             <div id="actionOptionList" class="mvp-check-group"></div>
           </div>
           <div class="mvp-guess-box">
-            <div class="mvp-insight-label">??????</div>
+            <div class="mvp-insight-label">真实诉求猜测</div>
             <div id="realIntentGuessText" class="mvp-ai-text"></div>
           </div>
           <div class="mvp-guess-box">
-            <div class="mvp-insight-label">????</div>
+            <div class="mvp-insight-label">仍需确认</div>
             <div id="uncertainItemList" class="mvp-tag-list"></div>
           </div>
         </div>
-        <div class="mvp-small-note">?????????????????????????????????????????</div>
+        <div class="mvp-small-note">如果理解不准确，可以修改三维判断或回到上方重试。建议提交版本会在你点选后继续优化。</div>
         <div class="mvp-actions" style="margin-top:16px">
-          <button class="mvp-btn primary" onclick="scrollToQuickSelection()">????? ? ??</button>
+          <button class="mvp-btn primary" onclick="scrollToQuickSelection()">确认澄清项 → 继续</button>
         </div>
       </div>
       <div class="mvp-ai-box">
-        <div class="mvp-ai-title">??????????</div>
-        <div class="mvp-choice-hint">?????????????????</div>
+        <div class="mvp-ai-title">快速确认，尽量少填字</div>
+        <div class="mvp-choice-hint">只点关键词；鼠标悬停可看完整含义。</div>
         <div id="quickSelectionList" class="mvp-choice-list">
           <div class="mvp-choice-card">
-            <div class="mvp-choice-title">1. ????????</div>
+            <div class="mvp-choice-title">1. 这件事最影响谁？</div>
             <div id="affectedRolesOptions" class="mvp-chip-group"></div>
           </div>
           <div class="mvp-choice-card">
-            <div class="mvp-choice-title">2. ??????????</div>
+            <div class="mvp-choice-title">2. 当前最大问题是什么？</div>
             <div id="focusPointOptions" class="mvp-chip-group"></div>
           </div>
           <div class="mvp-choice-card">
-            <div class="mvp-choice-title">3. ??????????</div>
+            <div class="mvp-choice-title">3. 你最希望系统做什么？</div>
             <div id="systemExpectationOptions" class="mvp-chip-group"></div>
           </div>
           <div class="mvp-choice-card" id="scenarioFormCard" style="display:none">
-            <div class="mvp-choice-title">?????</div>
-            <div class="mvp-choice-hint" id="scenarioFormHint">AI ???????????????????</div>
+            <div class="mvp-choice-title">场景化澄清</div>
+            <div class="mvp-choice-hint" id="scenarioFormHint">AI 会根据业务对象生成专用问题，点选即可。</div>
             <div id="scenarioFormBox" class="mvp-choice-list"></div>
           </div>
         </div>
         <div class="mvp-actions">
-          <button id="generateDemandBtn" class="mvp-btn primary" onclick="generateDemandCard()">??????</button>
-          <button class="mvp-btn secondary" onclick="fillQuestionExample()">??????</button>
+          <button id="generateDemandBtn" class="mvp-btn primary" onclick="generateDemandCard()">根据选择优化</button>
+          <button class="mvp-btn secondary" onclick="fillQuestionExample()">快速选择示例</button>
         </div>
       </div>
     </div>
   </div>
 
       <div class="mvp-panel" id="mvp-card-panel" style="display:none">
-    <div class="sec-hd sec-hd-right"><span class="badge">C</span>AI ???????</div>
+    <div class="sec-hd sec-hd-right"><span class="badge">C</span>AI 生成的建议版本</div>
     <div class="mvp-intro">
-      AI ??????????????????????????????????????????????
+      AI 已经先帮你生成一版可提交需求。你可以直接修改“可提交版本”；待确认问题和可选回答都不是必填。
     </div>
     <div id="demandCard" class="mvp-card-grid"></div>
     <div class="mvp-actions">
-      <button class="mvp-btn primary" onclick="applyCardToReport()">???????</button>
-      <button class="mvp-btn secondary" onclick="confirmSubmitDemand()">???? / ???? JSON</button>
+      <button class="mvp-btn primary" onclick="applyCardToReport()">同步到下方报告</button>
+      <button class="mvp-btn secondary" onclick="confirmSubmitDemand()">确认提交 / 查看精简 JSON</button>
     </div>
     <pre id="submitOutput" class="mvp-output"></pre>
     <div id="homeDemandPreview" class="mvp-home-preview" aria-live="polite">
       <div class="mvp-home-preview-head">
-        <div class="mvp-home-preview-title">??????</div>
-        <div class="mvp-home-preview-badge">?????????</div>
+        <div class="mvp-home-preview-title">首页确认预览</div>
+        <div class="mvp-home-preview-badge">业务人员在这里确认</div>
       </div>
       <div class="mvp-home-preview-grid">
         <div class="mvp-home-preview-item">
-          <div class="mvp-home-preview-label">????</div>
-          <div id="homePreviewOriginal" class="mvp-home-preview-text">???</div>
+          <div class="mvp-home-preview-label">原始需求</div>
+          <div id="homePreviewOriginal" class="mvp-home-preview-text">待同步</div>
         </div>
         <div class="mvp-home-preview-item">
-          <div class="mvp-home-preview-label">?????</div>
-          <div id="homePreviewPending" class="mvp-home-preview-text">???</div>
+          <div class="mvp-home-preview-label">待确认问题</div>
+          <div id="homePreviewPending" class="mvp-home-preview-text">待同步</div>
         </div>
         <div class="mvp-home-preview-item full">
-          <div class="mvp-home-preview-label">AI ?????????</div>
-          <div id="homePreviewRefined" class="mvp-home-preview-text primary">???</div>
+          <div class="mvp-home-preview-label">AI 改写后的可提交需求</div>
+          <div id="homePreviewRefined" class="mvp-home-preview-text primary">待同步</div>
         </div>
       </div>
     </div>
@@ -1186,10 +1186,10 @@
 
   <div class="mvp-deep-panel" id="deepAnalysisPanel">
     <div>
-      <div class="mvp-deep-title">ITBP ????</div>
-      <div id="deepAnalysisStatus" class="mvp-deep-status idle">?????????????????????ITBP???????????</div>
+      <div class="mvp-deep-title">ITBP 高级分析</div>
+      <div id="deepAnalysisStatus" class="mvp-deep-status idle">深度诊断尚未生成。业务人员可以先确认提交，ITBP可在后台生成完整分析。</div>
     </div>
-    <button id="deepAnalysisBtn" class="mvp-btn secondary" onclick="generateDeepAnalysis(false)" disabled>?? ITBP ????</button>
+    <button id="deepAnalysisBtn" class="mvp-btn secondary" onclick="generateDeepAnalysis(false)" disabled>生成 ITBP 深度分析</button>
   </div>
   </section>
 
@@ -1198,39 +1198,39 @@
     <div class="itbp-header-main">
       <div>
         <div class="itbp-kicker">ITBP Analysis Console</div>
-        <h2 class="itbp-title">????????????</h2>
-        <p class="itbp-subtitle">?? ITBP ????????????????AI ????????????????????????????????????????</p>
+        <h2 class="itbp-title">需求诊断与方案评估工作台</h2>
+        <p class="itbp-subtitle">面向 ITBP 的结构化分析视图，聚合原始诉求、AI 改写、流程断点、系统替代动作、推进路线和流程关联，便于快速判断是否进入方案评估。</p>
       </div>
       <div class="itbp-toolbar">
         <span class="itbp-status">Analysis Ready</span>
       </div>
     </div>
-    <div class="itbp-tabs" aria-label="ITBP????">
-      <span class="itbp-tab active">????</span>
-      <span class="itbp-tab">?????</span>
-      <span class="itbp-tab">????</span>
-      <span class="itbp-tab">????</span>
+    <div class="itbp-tabs" aria-label="ITBP分析导航">
+      <span class="itbp-tab active">诊断概览</span>
+      <span class="itbp-tab">结构化需求</span>
+      <span class="itbp-tab">推进路线</span>
+      <span class="itbp-tab">流程关系</span>
     </div>
     <div class="topbar">
-      <div class="topbar-title">???????</div>
-      <div class="topbar-meta"><span>????<b>Sven</b></span><span>???<b>??</b></span><span>???<b>2026-05-06</b></span></div>
+      <div class="topbar-title">一句话需求报告</div>
+      <div class="topbar-meta"><span>提出人：<b>Sven</b></span><span>部门：<b>采购</b></span><span>时间：<b>2026-05-06</b></span></div>
     </div>
   </div>
 
   <div class="row-desc">
     <div class="sec-left">
-      <div class="sec-hd sec-hd-left"><span class="badge">D</span>????-??</div>
-      <div class="orig-text">?????????????????????SAP?????????BOM?????????????????</div>
+      <div class="sec-hd sec-hd-left"><span class="badge">D</span>需求描述-原版</div>
+      <div class="orig-text">采购交付压力很大，需要减轻人工压力，需要在SAP中生成一张自动计算BOM用量的报表且自动发给采购执行的同学</div>
     </div>
     <div class="sec-right">
-      <div class="sec-hd sec-hd-right"><span class="badge">N</span>????-??</div>
+      <div class="sec-hd sec-hd-right"><span class="badge">N</span>需求描述-新版</div>
       <div class="opt-box">
-        <div class="newreq-sentence">???????IT??????????????????</div>
+        <div class="newreq-sentence">由我主导，协同IT与供应链，推进用量报表，实现交付减压</div>
         <div class="detail-toggle" onclick="toggleDetail(this)">
-          <span class="detail-arrow">?</span>
-          <span>??????</span>
+          <span class="detail-arrow">▶</span>
+          <span>需求详细描述</span>
         </div>
-        <div class="detail-body">????????????????BOM??????IT????SAP??????????BOM???????????????BOM????????????????????????????????????????????????????????SAP??????????????????????????????????????80%????????2?????????????????</div>
+        <div class="detail-body">在采购部门主导下，协同供应链确认BOM主数据标准、IT部门开发SAP报表与推送功能，推进BOM用量自动计算报表活动。根因在于BOM用量依赖人工导出逐项计算耗时易错且传递断链，计算结果依赖人工转发传递不及时且易遗漏。通过需求梳理与数据标准确认、SAP报表开发与推送实现、上线验证与运维支持三步推进，最终实现用量计算人工工时降低80%、报表推送时效≤2小时，并以采购交付准时率持续监控。</div>
       </div>
     </div>
   </div>
@@ -1240,75 +1240,75 @@
       <div class="sec-mid-starfield">
         <canvas id="starfield" class="sf-canvas"></canvas>
         <div class="sf-content">
-          <div class="sec-hd sec-hd-mid"><span class="badge">Q</span>AI???? ? ????<div class="section-toggle" onclick="toggleSection(this,'clarify-content')"><span class="section-toggle-arrow">?</span><span class="section-toggle-text">??</span></div></div>
+          <div class="sec-hd sec-hd-mid"><span class="badge">Q</span>AI启发菜单 · 人机协同<div class="section-toggle" onclick="toggleSection(this,'clarify-content')"><span class="section-toggle-arrow">▼</span><span class="section-toggle-text">收起</span></div></div>
           <div id="clarify-content" class="section-content-collapsible">
           <div class="clarify-box">
-            <div class="clarify-hd">?? ????????AI????????????????????</div>
+            <div class="clarify-hd">🤝 采购同学辛苦了！AI帮您补全需求盲区，请勾选最符合的补充项：</div>
             <div class="clarify-items">
               <div class="clarify-item">
-                <div class="clarify-item-hd"><span class="clarify-item-tag" style="background:#e53935">Why</span><span class="clarify-item-name">????</span></div>
+                <div class="clarify-item-hd"><span class="clarify-item-tag" style="background:#e53935">Why</span><span class="clarify-item-name">需求背景</span></div>
                 <div class="clarify-reminder checked" onclick="toggleCheck(this)" data-dimension="why" data-value="frequent_change">
-                  <span class="clarify-ck">?</span>
-                  <span class="clarify-reminder-text">BOM???????????</span>
+                  <span class="clarify-ck">✓</span>
+                  <span class="clarify-reminder-text">BOM版本频繁变更致时效不足</span>
                 </div>
                 <div class="clarify-reminder checked" onclick="toggleCheck(this)" data-dimension="why" data-value="delivery_cycle">
-                  <span class="clarify-ck">?</span>
-                  <span class="clarify-reminder-text">????????????</span>
+                  <span class="clarify-ck">✓</span>
+                  <span class="clarify-reminder-text">交付周期缩短手工响应滞后</span>
                 </div>
               </div>
               <div class="clarify-item">
-                <div class="clarify-item-hd"><span class="clarify-item-tag" style="background:#0176d3">What</span><span class="clarify-item-name">????</span></div>
+                <div class="clarify-item-hd"><span class="clarify-item-tag" style="background:#0176d3">What</span><span class="clarify-item-name">活动名称</span></div>
                 <div class="clarify-reminder checked" onclick="toggleCheck(this)" data-dimension="what" data-value="multi_factory_report">
-                  <span class="clarify-ck">?</span>
-                  <span class="clarify-reminder-text">???????BOM????</span>
+                  <span class="clarify-ck">✓</span>
+                  <span class="clarify-reminder-text">报表覆盖多工厂BOM用量对比</span>
                 </div>
                 <div class="clarify-reminder checked" onclick="toggleCheck(this)" data-dimension="what" data-value="trace_and_alert">
-                  <span class="clarify-ck">?</span>
-                  <span class="clarify-reminder-text">???????????</span>
+                  <span class="clarify-ck">✓</span>
+                  <span class="clarify-reminder-text">用量变更追踪与趋势预警</span>
                 </div>
               </div>
               <div class="clarify-item">
-                <div class="clarify-item-hd"><span class="clarify-item-tag" style="background:#ff9800">Who</span><span class="clarify-item-name">???</span></div>
+                <div class="clarify-item-hd"><span class="clarify-item-tag" style="background:#ff9800">Who</span><span class="clarify-item-name">主导方</span></div>
                 <div class="clarify-reminder checked" onclick="toggleCheck(this)" data-dimension="who" data-value="supply_chain_lead">
-                  <span class="clarify-ck">?</span>
-                  <span class="clarify-reminder-text">??????BOM?????</span>
+                  <span class="clarify-ck">✓</span>
+                  <span class="clarify-reminder-text">需供应链确认BOM主数据标准</span>
                 </div>
                 <div class="clarify-reminder checked" onclick="toggleCheck(this)" data-dimension="who" data-value="it_support">
-                  <span class="clarify-ck">?</span>
-                  <span class="clarify-reminder-text">?IT??SAP??????</span>
+                  <span class="clarify-ck">✓</span>
+                  <span class="clarify-reminder-text">需IT配合SAP开发推送配置</span>
                 </div>
               </div>
               <div class="clarify-item">
-                <div class="clarify-item-hd"><span class="clarify-item-tag" style="background:#795548">How</span><span class="clarify-item-name">????</span></div>
+                <div class="clarify-item-hd"><span class="clarify-item-tag" style="background:#795548">How</span><span class="clarify-item-name">基本步骤</span></div>
                 <div class="clarify-reminder checked" onclick="toggleCheck(this)" data-dimension="how" data-value="ops_optimize">
-                  <span class="clarify-ck">?</span>
-                  <span class="clarify-reminder-text">?????????????</span>
+                  <span class="clarify-ck">✓</span>
+                  <span class="clarify-reminder-text">增加运维支持与持续优化步骤</span>
                 </div>
                 <div class="clarify-reminder checked" onclick="toggleCheck(this)" data-dimension="how" data-value="training_doc">
-                  <span class="clarify-ck">?</span>
-                  <span class="clarify-reminder-text">?????????????</span>
+                  <span class="clarify-ck">✓</span>
+                  <span class="clarify-reminder-text">补充用户培训与操作手册编写</span>
                 </div>
               </div>
               <div class="clarify-item">
-                <div class="clarify-item-hd"><span class="clarify-item-tag" style="background:#9c27b0">Input</span><span class="clarify-item-name">????</span></div>
+                <div class="clarify-item-hd"><span class="clarify-item-tag" style="background:#9c27b0">Input</span><span class="clarify-item-name">触发前提</span></div>
                 <div class="clarify-reminder checked" onclick="toggleCheck(this)" data-dimension="input" data-value="urgent_trigger">
-                  <span class="clarify-ck">?</span>
-                  <span class="clarify-reminder-text">????????????</span>
+                  <span class="clarify-ck">✓</span>
+                  <span class="clarify-reminder-text">紧急交付计划变更即时触发</span>
                 </div>
                 <div class="clarify-reminder checked" onclick="toggleCheck(this)" data-dimension="input" data-value="cross_factory">
-                  <span class="clarify-ck">?</span>
-                  <span class="clarify-reminder-text">???BOM??????</span>
+                  <span class="clarify-ck">✓</span>
+                  <span class="clarify-reminder-text">跨工厂BOM数据同步触发</span>
                 </div>
               </div>
               <div class="clarify-item">
-                <div class="clarify-item-hd"><span class="clarify-item-tag" style="background:#00bcd4">Output</span><span class="clarify-item-name">????</span></div>
+                <div class="clarify-item-hd"><span class="clarify-item-tag" style="background:#00bcd4">Output</span><span class="clarify-item-name">最终输出</span></div>
                 <div class="clarify-reminder checked" onclick="toggleCheck(this)" data-dimension="output" data-value="alert_notify">
-                  <span class="clarify-ck">?</span>
-                  <span class="clarify-reminder-text">?????????????</span>
+                  <span class="clarify-ck">✓</span>
+                  <span class="clarify-reminder-text">推送未读提醒与异常用量预警</span>
                 </div>
                 <div class="clarify-reminder checked" onclick="toggleCheck(this)" data-dimension="output" data-value="auto_block">
-                  <span class="clarify-ck">?</span>
-                  <span class="clarify-reminder-text">???????????</span>
+                  <span class="clarify-ck">✓</span>
+                  <span class="clarify-reminder-text">用量偏差超阈值自动拦截</span>
                 </div>
               </div>
             </div>
@@ -1320,34 +1320,34 @@
   </div>
 
   <div class="row-body">
-    <div class="sec-hd sec-hd-left"><span class="badge">B</span>????? ? ????<span class="machine-badge">??</span><div class="body-toggle" onclick="toggleSection(this,'body-content')"><span class="body-toggle-arrow">?</span><span class="body-toggle-text">??</span></div></div>
+    <div class="sec-hd sec-hd-left"><span class="badge">B</span>结构化需求 · 人机补全<span class="machine-badge">机部</span><div class="body-toggle" onclick="toggleSection(this,'body-content')"><span class="body-toggle-arrow">▼</span><span class="body-toggle-text">收起</span></div></div>
     <div id="body-content" class="section-content-collapsible">
     <div class="body-cols">
       <div class="body-col-left">
-        <div class="body-tier-label">??? ? Why ? What ? Wheren ? Who ? Howmuch</div>
+        <div class="body-tier-label">定义层 — Why · What · Wheren · Who · Howmuch</div>
         <div class="body-row">
-          <div class="body-item"><div class="bi-hd"><span class="body-tag t-why">Why</span><span class="body-label">????</span></div><div class="bi-content"><div class="body-val">????????????BOM????????????<span style="color:#0176d3">BOM????????????????????????</span></div><div class="body-src"><span class="dot dot-u"></span>?????? ? <span class="dot dot-a"></span>AI????</div></div></div>
-          <div class="body-item"><div class="bi-hd"><span class="body-tag t-what">What</span><span class="body-label">????</span></div><div class="bi-content"><div class="body-val what-red">SAP BOM????????????<span style="color:#0176d3">?????BOM????????????????</span></div><div class="body-src"><span class="dot dot-u"></span>AI?????? ? <span class="dot dot-a"></span>AI????</div></div></div>
+          <div class="body-item"><div class="bi-hd"><span class="body-tag t-why">Why</span><span class="body-label">需求背景</span></div><div class="bi-content"><div class="body-val">采购交付压力大，人工计算BOM用量耗时易错且传递断链；<span style="color:#0176d3">BOM版本频繁变更致时效不足、交付周期缩短手工响应滞后</span></div><div class="body-src"><span class="dot dot-u"></span>用户原始描述 · <span class="dot dot-a"></span>AI启发菜单</div></div></div>
+          <div class="body-item"><div class="bi-hd"><span class="body-tag t-what">What</span><span class="body-label">活动名称</span></div><div class="bi-content"><div class="body-val what-red">SAP BOM用量报表自动计算与推送；<span style="color:#0176d3">覆盖多工厂BOM用量对比、用量变更追踪与趋势预警</span></div><div class="body-src"><span class="dot dot-u"></span>AI提炼核心需求 · <span class="dot dot-a"></span>AI启发菜单</div></div></div>
         </div>
         <div class="body-row">
-          <div class="body-item"><div class="bi-hd"><span class="body-tag t-wheren">Wheren</span><span class="body-label">????</span></div><div class="bi-content"><div class="body-val"><b>IPD ? ??????(L3) ? ???????(L4)</b><br>????????????????????BOM??????????????????????</div><div class="body-src"><span class="dot dot-r"></span>????????</div></div></div>
-          <div class="body-item"><div class="bi-hd"><span class="body-tag t-who">Who</span><span class="body-label">???</span></div><div class="bi-content"><div class="body-val"><b>????</b>?Sven????<span style="color:#0176d3">??????BOM???????IT??SAP??????</span></div><div class="body-src"><span class="dot dot-u"></span>???? ? <span class="dot dot-a"></span>AI????</div></div></div>
+          <div class="body-item"><div class="bi-hd"><span class="body-tag t-wheren">Wheren</span><span class="body-label">所属流程</span></div><div class="bi-content"><div class="body-val"><b>IPD → 产品交付流程(L3) → 采购执行子流程(L4)</b><br>归属集成产品开发体系下产品交付环节，涉及BOM用量计算、采购计划制定到采购执行的完整链路。</div><div class="body-src"><span class="dot dot-r"></span>参考华为流程体系</div></div></div>
+          <div class="body-item"><div class="bi-hd"><span class="body-tag t-who">Who</span><span class="body-label">主导方</span></div><div class="bi-content"><div class="body-val"><b>采购部门</b>（Sven发起），<span style="color:#0176d3">需供应链确认BOM主数据标准、需IT配合SAP开发推送配置</span></div><div class="body-src"><span class="dot dot-u"></span>用户指定 · <span class="dot dot-a"></span>AI启发菜单</div></div></div>
         </div>
         <div class="body-row">
-          <div class="body-item"><div class="bi-hd"><span class="body-tag t-howmuch">Howmuch</span><span class="body-label">????</span></div><div class="bi-content"><div class="body-val">??<b>30-45??</b>?????<b>37??</b>????????BOM???????SAP????????????????????????????????????????SAP???????????</div><div class="body-src"><span class="dot dot-a"></span>AI?????????????</div></div></div>
+          <div class="body-item"><div class="bi-hd"><span class="body-tag t-howmuch">Howmuch</span><span class="body-label">预估投入</span></div><div class="bi-content"><div class="body-val">预估<b>30-45人天</b>（中位数约<b>37人天</b>）。含需求梳理与BOM数据标准确认、SAP报表开发与推送功能实现、上线验证与运维支持三大模块。参考整车制造行业同等体量企业SAP报表开发平均水平估算。</div><div class="body-src"><span class="dot dot-a"></span>AI基于行业实践估算·人天预估</div></div></div>
         </div>
       </div>
       <div class="body-col-right">
-        <div class="body-tier-label exe">??? ? How ? Monitor ? Input ? Output</div>
+        <div class="body-tier-label exe">执行层 — How · Monitor · Input · Output</div>
         <div class="body-row">
-          <div class="body-item"><div class="bi-hd"><span class="body-tag t-how">How</span><span class="body-label">????</span></div><div class="bi-content"><div class="body-val"><div class="how-steps"><div class="how-step"><b>S1 ??</b><br>BOM???????????????</div><div class="how-step"><b>S2 ??</b><br>SAP????+BOM??????+????</div><div class="how-step"><b>S3 ??</b><br>??????????????????????</div><div class="how-step how-step-ai"><b>+S4 ??</b><br>?????????</div><div class="how-step how-step-ai"><b>+S5 ??</b><br>???????????</div></div></div><div class="body-src"><span class="dot dot-u"></span>AI?????? ? <span class="dot dot-a"></span>AI????</div></div></div>
+          <div class="body-item"><div class="bi-hd"><span class="body-tag t-how">How</span><span class="body-label">基本步骤</span></div><div class="bi-content"><div class="body-val"><div class="how-steps"><div class="how-step"><b>S1 梳理</b><br>BOM数据标准确认与用量计算逻辑梳理</div><div class="how-step"><b>S2 开发</b><br>SAP报表开发+BOM用量自动计算+推送配置</div><div class="how-step"><b>S3 验证</b><br>试点验证报表准确率与推送时效，确认达标后推广</div><div class="how-step how-step-ai"><b>+S4 运维</b><br>运维支持与持续优化</div><div class="how-step how-step-ai"><b>+S5 培训</b><br>用户培训与操作手册编写</div></div></div><div class="body-src"><span class="dot dot-u"></span>AI基于需求拆解 · <span class="dot dot-a"></span>AI启发菜单</div></div></div>
         </div>
         <div class="body-row">
-          <div class="body-item"><div class="bi-hd"><span class="body-tag t-monitor">Monitor</span><span class="body-label">????</span></div><div class="bi-content"><div class="body-val"><div class="mon-steps"><div class="mon-step"><b>??1</b><br>?????????80%</div><div class="mon-step"><b>??2</b><br>???????2h</div><div class="mon-step mon-result"><b>??</b><br>????????</div></div></div><div class="body-src"><span class="dot dot-a"></span>AI?????????2??+1????</div></div></div>
+          <div class="body-item"><div class="bi-hd"><span class="body-tag t-monitor">Monitor</span><span class="body-label">相关指标</span></div><div class="bi-content"><div class="body-val"><div class="mon-steps"><div class="mon-step"><b>过程1</b><br>用量计算人工工时↓80%</div><div class="mon-step"><b>过程2</b><br>报表推送时效≤2h</div><div class="mon-step mon-result"><b>结果</b><br>采购交付准时率↑</div></div></div><div class="body-src"><span class="dot dot-a"></span>AI基于行业最佳实践·2过程+1结果指标</div></div></div>
         </div>
         <div class="body-row">
-          <div class="body-item"><div class="bi-hd"><span class="body-tag t-input">Input</span><span class="body-label">????</span></div><div class="bi-content"><div class="body-val">???????? ?BOM????? ??????????SAP???????????<span style="color:#0176d3">+?????????????+???BOM??????</span></div><div class="body-src"><span class="dot dot-u"></span>AI???????? ? <span class="dot dot-a"></span>AI????</div></div></div>
-          <div class="body-item"><div class="bi-hd"><span class="body-tag t-output">Output</span><span class="body-label">????</span></div><div class="bi-content"><div class="body-val"><b>???</b>????????????????????????????<span style="color:#0176d3">?????????????</span><br><b>???</b>???????????????<span style="color:#0176d3">???????????</span></div><div class="body-src"><span class="dot dot-u"></span>AI???? ? <span class="dot dot-a"></span>AI????</div></div></div>
+          <div class="body-item"><div class="bi-hd"><span class="body-tag t-input">Input</span><span class="body-label">触发前提</span></div><div class="bi-content"><div class="body-val">①生产计划下达时 ②BOM版本变更时 ③采购周期启动时——SAP自动触发用量计算指令；<span style="color:#0176d3">+紧急交付计划变更即时触发、+跨工厂BOM数据同步触发</span></div><div class="body-src"><span class="dot dot-u"></span>AI基于行业场景推断 · <span class="dot dot-a"></span>AI启发菜单</div></div></div>
+          <div class="body-item"><div class="bi-hd"><span class="body-tag t-output">Output</span><span class="body-label">最终输出</span></div><div class="bi-content"><div class="body-val"><b>正面：</b>用量自动计算减少人工耗时，报表推送采购执行及时获取数据，<span style="color:#0176d3">推送未读提醒与异常用量预警</span><br><b>负面：</b>上线初期需验证计算逻辑准确性，<span style="color:#0176d3">用量偏差超阈值自动拦截</span></div><div class="body-src"><span class="dot dot-u"></span>AI逻辑推演 · <span class="dot dot-a"></span>AI启发菜单</div></div></div>
         </div>
       </div>
     </div>
@@ -1357,20 +1357,20 @@
   <div class="row-sug">
     <div class="sec-mid-outer">
       <div class="sec-mid-yellow">
-        <div class="sec-hd sec-hd-mid"><span class="badge">S</span>?????</div>
+        <div class="sec-hd sec-hd-mid"><span class="badge">S</span>补充与提醒</div>
         <div class="sug-cols">
           <div>
-            <div class="sug-hd red">ITBP????</div>
+            <div class="sug-hd red">ITBP诊断摘要</div>
             <ul class="sug-list sug-focus">
-              <li><span class="sug-nb" style="background:#e53935">1</span><b>BOM?????????????????</b>????BOM?????????????BOM?????????????????????????????BOM???????????????GDPR??????????</li>
-              <li><span class="sug-nb" style="background:#e53935">2</span><b>??????????????????</b>????????????????????????????????????????????????????</li>
+              <li><span class="sug-nb" style="background:#e53935">1</span><b>BOM数据标准一致性是报表准确性的基石：</b>整车制造BOM层级复杂且涉及全球多工厂，BOM主数据标准不统一将直接导致用量计算偏差，须在报表开发前完成BOM数据字典与计算逻辑对齐，并考虑GDPR等跨境数据合规要求。</li>
+              <li><span class="sug-nb" style="background:#e53935">2</span><b>自动推送须嵌入采购执行流程形成闭环：</b>推送时机、内容、对象须与采购执行节奏匹配，避免信息轰炸或遗漏；报表覆盖全球多工厂时需考虑时区与语言差异。</li>
             </ul>
           </div>
           <div>
-            <div class="sug-hd blue">????????</div>
+            <div class="sug-hd blue">系统替代与待确认</div>
             <ul class="sug-list sug-act">
-              <li><span class="sug-nb" style="background:#0176d3">?</span><b>???BOM???????</b>BOM????????????SAP??????????????BOM????????????????????</li>
-              <li><span class="sug-nb" style="background:#0176d3">?</span><b>????????????</b>??????????????????????????????????????????????????</li>
+              <li><span class="sug-nb" style="background:#0176d3">↑</span><b>上游·BOM数据治理专项：</b>BOM数据清洗、计算规则统一、SAP主数据校验——报表依赖准确的BOM主数据，上游数据质量直接影响报表可信度。</li>
+              <li><span class="sug-nb" style="background:#0176d3">↓</span><b>下游·采购计划自动生成：</b>用量计算→采购建议→采购执行完整联动——报表计算完成后应自动触发采购建议生成，形成完整采购决策链路。</li>
             </ul>
           </div>
         </div>
@@ -1380,57 +1380,57 @@
 
   <div class="row-roadmap">
     <div class="roadmap-card">
-      <div class="sec-hd sec-hd-right"><span class="badge">R</span>????? ? ?????</div>
+      <div class="sec-hd sec-hd-right"><span class="badge">R</span>推进路线图 · 线性里程碑</div>
       <div class="linear-roadmap">
-        <div class="lr-ms"><div class="lr-ms-dot" style="background:#e53935"></div><div class="lr-ms-tag" style="background:#e53935">Why</div><div class="lr-ms-title">??????</div></div>
-        <span class="lr-arr">?</span>
-        <div class="lr-ms"><div class="lr-ms-dot" style="background:#0176d3"></div><div class="lr-ms-tag" style="background:#0176d3">What</div><div class="lr-ms-title">???????</div></div>
-        <span class="lr-arr">?</span>
-        <div class="lr-ms"><div class="lr-ms-dot" style="background:#e53935"></div><div class="lr-ms-tag" style="background:#e53935">??1</div><div class="lr-ms-title">BOM??????</div></div>
-        <span class="lr-arr">?</span>
-        <div class="lr-ms"><div class="lr-ms-dot" style="background:#795548"></div><div class="lr-ms-tag" style="background:#795548">How-S1</div><div class="lr-ms-title">BOM????</div></div>
-        <span class="lr-arr">?</span>
-        <div class="lr-ms"><div class="lr-ms-dot" style="background:#795548"></div><div class="lr-ms-tag" style="background:#795548">How-S2</div><div class="lr-ms-title">SAP????</div></div>
-        <span class="lr-arr">?</span>
-        <div class="lr-ms"><div class="lr-ms-dot" style="background:#e53935"></div><div class="lr-ms-tag" style="background:#e53935">??2</div><div class="lr-ms-title">??????</div></div>
-        <span class="lr-arr">?</span>
-        <div class="lr-ms"><div class="lr-ms-dot" style="background:#795548"></div><div class="lr-ms-tag" style="background:#795548">How-S3</div><div class="lr-ms-title">???????</div></div>
-        <span class="lr-arr">?</span>
-        <div class="lr-ms"><div class="lr-ms-dot" style="background:#607d8b"></div><div class="lr-ms-tag" style="background:#607d8b">Monitor</div><div class="lr-ms-title">???????</div></div>
+        <div class="lr-ms"><div class="lr-ms-dot" style="background:#e53935"></div><div class="lr-ms-tag" style="background:#e53935">Why</div><div class="lr-ms-title">需求背景确认</div></div>
+        <span class="lr-arr">→</span>
+        <div class="lr-ms"><div class="lr-ms-dot" style="background:#0176d3"></div><div class="lr-ms-tag" style="background:#0176d3">What</div><div class="lr-ms-title">活动定义与立项</div></div>
+        <span class="lr-arr">→</span>
+        <div class="lr-ms"><div class="lr-ms-dot" style="background:#e53935"></div><div class="lr-ms-tag" style="background:#e53935">重点1</div><div class="lr-ms-title">BOM数据标准对齐</div></div>
+        <span class="lr-arr">→</span>
+        <div class="lr-ms"><div class="lr-ms-dot" style="background:#795548"></div><div class="lr-ms-tag" style="background:#795548">How-S1</div><div class="lr-ms-title">BOM数据梳理</div></div>
+        <span class="lr-arr">→</span>
+        <div class="lr-ms"><div class="lr-ms-dot" style="background:#795548"></div><div class="lr-ms-tag" style="background:#795548">How-S2</div><div class="lr-ms-title">SAP报表开发</div></div>
+        <span class="lr-arr">→</span>
+        <div class="lr-ms"><div class="lr-ms-dot" style="background:#e53935"></div><div class="lr-ms-tag" style="background:#e53935">重点2</div><div class="lr-ms-title">推送规则衔接</div></div>
+        <span class="lr-arr">→</span>
+        <div class="lr-ms"><div class="lr-ms-dot" style="background:#795548"></div><div class="lr-ms-tag" style="background:#795548">How-S3</div><div class="lr-ms-title">试点验证与推广</div></div>
+        <span class="lr-arr">→</span>
+        <div class="lr-ms"><div class="lr-ms-dot" style="background:#607d8b"></div><div class="lr-ms-tag" style="background:#607d8b">Monitor</div><div class="lr-ms-title">全面推广与监控</div></div>
       </div>
     </div>
   </div>
 
   <div class="row-flow">
     <div class="flow-card">
-      <div class="sec-hd sec-hd-right"><span class="badge">L</span>???? ? ??????</div>
+      <div class="sec-hd sec-hd-right"><span class="badge">L</span>需求逻辑 · 流程关联示意</div>
       <div class="flow">
         <div class="flow-r">
-          <div class="flow-n" style="background:#9c27b0"><span class="flow-lb">????</span>??/BOM??/????</div>
-          <div class="flow-arr">?</div>
-          <div class="flow-n" style="background:#0176d3"><span class="flow-lb">????</span>SAP BOM????</div>
-          <div class="flow-arr">?</div>
-          <div class="flow-n" style="background:#795548"><span class="flow-lb">????</span>???????????</div>
+          <div class="flow-n" style="background:#9c27b0"><span class="flow-lb">触发前提</span>计划/BOM变更/周期启动</div>
+          <div class="flow-arr">→</div>
+          <div class="flow-n" style="background:#0176d3"><span class="flow-lb">活动名称</span>SAP BOM用量报表</div>
+          <div class="flow-arr">→</div>
+          <div class="flow-n" style="background:#795548"><span class="flow-lb">执行步骤</span>梳理→开发→验证→运维</div>
         </div>
-        <div class="flow-darr">?</div>
+        <div class="flow-darr">↓</div>
         <div class="flow-r">
-          <div class="flow-n" style="background:#e53935"><span class="flow-lb">????</span>??????????????</div>
-          <div class="flow-arr">?</div>
-          <div class="flow-n" style="background:#4caf50"><span class="flow-lb">????</span>IPD?????</div>
-          <div class="flow-arr">?</div>
-          <div class="flow-n" style="background:#ff9800"><span class="flow-lb">???</span>??+IT+???</div>
+          <div class="flow-n" style="background:#e53935"><span class="flow-lb">需求背景</span>人工耗时·传递断链·变更滞后</div>
+          <div class="flow-arr">→</div>
+          <div class="flow-n" style="background:#4caf50"><span class="flow-lb">所属流程</span>IPD·采购执行</div>
+          <div class="flow-arr">→</div>
+          <div class="flow-n" style="background:#ff9800"><span class="flow-lb">主导方</span>采购+IT+供应链</div>
         </div>
-        <div class="flow-darr">?</div>
+        <div class="flow-darr">↓</div>
         <div class="flow-r">
-          <div class="flow-n" style="background:#00bcd4"><span class="flow-lb">????</span>?????????????</div>
-          <div class="flow-arr">?</div>
-          <div class="flow-n" style="background:#607d8b"><span class="flow-lb">????</span>???80% ? ???2h ? ????</div>
+          <div class="flow-n" style="background:#00bcd4"><span class="flow-lb">最终输出</span>自动计算·推送·预警·拦截</div>
+          <div class="flow-arr">←</div>
+          <div class="flow-n" style="background:#607d8b"><span class="flow-lb">监控指标</span>工时↓80% · 推送≤2h · 准时率↑</div>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="footer">??????? ? Sven V9???? ? 2026-05-06 ? <em>???????AI???"??"?????????????????????</em></div>
+  <div class="footer">一句话需求报告 · Sven V9技能生成 · 2026-05-06 · <em>标注蓝色字体为AI推断的"机部"内容，需与业务方确认后方可作为最终需求基线</em></div>
   </section>
 
   <section class="solution-workspace app-view" id="solutionWorkspace" data-view="solution" hidden>
@@ -1438,10 +1438,10 @@
       <div class="solution-header-main">
         <div>
           <div class="solution-kicker">PRD Generation Workspace</div>
-          <h2 class="solution-title">AI PRD ????</h2>
-          <p class="solution-subtitle">?????????AI ????? ITBP ????????????ITBP?????? PRD ???????????</p>
+          <h2 class="solution-title">AI PRD 文档生成</h2>
+          <p class="solution-subtitle">基于业务人员需求、AI 澄清结果和 ITBP 诊断摘要，生成可供业务、ITBP、开发评审的 PRD 文档草案，并支持下载。</p>
         </div>
-        <div id="solutionStatus" class="solution-status">???</div>
+        <div id="solutionStatus" class="solution-status">未生成</div>
       </div>
     </div>
 
@@ -1449,27 +1449,27 @@
       <aside class="solution-card">
         <div class="solution-card-hd">
           <div>
-            <div class="solution-card-title">????</div>
-            <div class="solution-card-sub">??????? AI ????</div>
+            <div class="solution-card-title">需求摘要</div>
+            <div class="solution-card-sub">来自业务提需和 AI 澄清结果</div>
           </div>
         </div>
         <div class="solution-card-body">
           <div class="solution-summary-list">
             <div class="solution-summary-item">
-              <div class="solution-summary-label">????</div>
-              <div id="solutionOriginalRequest" class="solution-summary-value">????????????????? AI ???</div>
+              <div class="solution-summary-label">原始需求</div>
+              <div id="solutionOriginalRequest" class="solution-summary-value">尚未生成需求，请先在业务提需页完成 AI 深挖。</div>
             </div>
             <div class="solution-summary-item">
-              <div class="solution-summary-label">AI ????</div>
-              <div id="solutionRefinedRequest" class="solution-summary-value">???</div>
+              <div class="solution-summary-label">AI 识别诉求</div>
+              <div id="solutionRefinedRequest" class="solution-summary-value">待生成</div>
             </div>
             <div class="solution-summary-item">
-              <div class="solution-summary-label">??? / ??</div>
-              <div id="solutionDomainObject" class="solution-summary-value">???</div>
+              <div class="solution-summary-label">业务域 / 对象</div>
+              <div id="solutionDomainObject" class="solution-summary-value">待识别</div>
             </div>
             <div class="solution-summary-item">
-              <div class="solution-summary-label">?????</div>
-              <div id="solutionPendingQuestions" class="solution-summary-value">???</div>
+              <div class="solution-summary-label">待确认问题</div>
+              <div id="solutionPendingQuestions" class="solution-summary-value">待识别</div>
             </div>
           </div>
         </div>
@@ -1479,49 +1479,49 @@
         <div class="solution-card">
           <div class="solution-card-hd">
             <div>
-              <div class="solution-card-title">????</div>
-              <div class="solution-card-sub">???? PRD ?????????????</div>
+              <div class="solution-card-title">生成设置</div>
+              <div class="solution-card-sub">用于控制 PRD 文档的深度、视角和参考范围</div>
             </div>
           </div>
           <div class="solution-card-body">
             <div class="solution-settings">
               <div class="solution-columns">
                 <div class="solution-field">
-                  <label for="solutionDepth">????</label>
+                  <label for="solutionDepth">方案深度</label>
                   <select id="solutionDepth">
-                    <option>????</option>
-                    <option>????</option>
-                    <option>????</option>
+                    <option>标准方案</option>
+                    <option>快速方案</option>
+                    <option>详细方案</option>
                   </select>
                 </div>
                 <div class="solution-field">
-                  <label for="solutionType">????</label>
+                  <label for="solutionType">方案类型</label>
                   <select id="solutionType">
-                    <option>????</option>
-                    <option>??????</option>
-                    <option>??????</option>
-                    <option>??????</option>
+                    <option>综合方案</option>
+                    <option>系统功能方案</option>
+                    <option>流程优化方案</option>
+                    <option>数据治理方案</option>
                   </select>
                 </div>
               </div>
               <div class="solution-columns">
                 <div class="solution-field">
-                  <label for="solutionStyle">????</label>
+                  <label for="solutionStyle">输出风格</label>
                   <select id="solutionStyle">
-                    <option>ITBP ?????</option>
-                    <option>???????</option>
-                    <option>???/?????</option>
+                    <option>ITBP 内部评估版</option>
+                    <option>给业务方沟通版</option>
+                    <option>给开发/架构评审版</option>
                   </select>
                 </div>
                 <label class="solution-switch">
                   <input id="solutionWebSearch" type="checkbox">
-                  <span><b>????????</b><span>???????????????????</span></span>
+                  <span><b>联网搜索公开经验</b><span>后续接入搜索服务；当前前端先保留入口。</span></span>
                 </label>
               </div>
             </div>
             <div class="solution-actions">
-              <button id="generateSolutionBtn" class="solution-btn primary" type="button" onclick="generateSolutionDraft()">?? PRD ??</button>
-              <button class="solution-btn secondary" type="button" onclick="switchAppView('submission')">??????</button>
+              <button id="generateSolutionBtn" class="solution-btn primary" type="button" onclick="generateSolutionDraft()">生成 PRD 文档</button>
+              <button class="solution-btn secondary" type="button" onclick="switchAppView('submission')">返回业务提需</button>
             </div>
           </div>
         </div>
@@ -1529,52 +1529,52 @@
         <div id="solutionEmpty" class="solution-empty">
           <div>
             <div class="solution-empty-icon">AI</div>
-            <div class="solution-empty-title">???? PRD ??</div>
-            <div class="solution-empty-text">????? PRD ??????????????????????????? PRD?</div>
+            <div class="solution-empty-title">等待生成 PRD 文档</div>
+            <div class="solution-empty-text">点击“生成 PRD 文档”后，将自动输出方案摘要、功能模块、实施路径和完整 PRD。</div>
             <div class="solution-empty-steps">
-              <span>????</span>
-              <span>????</span>
-              <span>????</span>
+              <span>读取需求</span>
+              <span>组织章节</span>
+              <span>生成文档</span>
             </div>
           </div>
         </div>
 
         <div id="solutionOutput" class="solution-output">
           <section class="solution-section">
-            <div class="solution-section-hd"><span class="solution-section-index">1</span><span class="solution-section-title">????</span></div>
+            <div class="solution-section-hd"><span class="solution-section-index">1</span><span class="solution-section-title">方案摘要</span></div>
             <div id="solutionExecutiveSummary" class="solution-section-body"></div>
           </section>
           <section class="solution-section">
-            <div class="solution-section-hd"><span class="solution-section-index">2</span><span class="solution-section-title">??????</span></div>
+            <div class="solution-section-hd"><span class="solution-section-index">2</span><span class="solution-section-title">推荐方案架构</span></div>
             <div class="solution-section-body">
               <div class="solution-columns">
-                <div class="solution-mini-card"><b>????</b><span id="solutionEntryPoint">??/??????</span></div>
-                <div class="solution-mini-card"><b>?????</b><span id="solutionDataSystems">????????????????</span></div>
+                <div class="solution-mini-card"><b>业务入口</b><span id="solutionEntryPoint">下单/业务操作入口</span></div>
+                <div class="solution-mini-card"><b>数据与系统</b><span id="solutionDataSystems">库存、订单、状态、责任人等数据源</span></div>
               </div>
             </div>
           </section>
           <section class="solution-section">
-            <div class="solution-section-hd"><span class="solution-section-index">3</span><span class="solution-section-title">??????</span></div>
+            <div class="solution-section-hd"><span class="solution-section-index">3</span><span class="solution-section-title">功能模块建议</span></div>
             <div class="solution-section-body"><ol id="solutionModules" class="solution-list"></ol></div>
           </section>
           <section class="solution-section">
-            <div class="solution-section-hd"><span class="solution-section-index">4</span><span class="solution-section-title">????</span></div>
+            <div class="solution-section-hd"><span class="solution-section-index">4</span><span class="solution-section-title">实施路径</span></div>
             <div class="solution-section-body">
               <div id="solutionStages" class="solution-stage-list"></div>
             </div>
           </section>
           <section class="solution-section solution-risk">
-            <div class="solution-section-hd"><span class="solution-section-index">5</span><span class="solution-section-title">????????</span></div>
-            <div class="solution-section-body"><ul id="solutionRisks" class="solution-list"></ul><div class="solution-note">???? AI ???? ITBP ????????????????????????</div></div>
+            <div class="solution-section-hd"><span class="solution-section-index">5</span><span class="solution-section-title">风险与待确认事项</span></div>
+            <div class="solution-section-body"><ul id="solutionRisks" class="solution-list"></ul><div class="solution-note">该方案为 AI 草案，需 ITBP 结合企业系统现状、数据质量和业务规则进一步确认。</div></div>
           </section>
         </div>
 
         <div id="prdPanel" class="prd-panel">
           <div class="prd-toolbar">
-            <div class="prd-title">PRD ????</div>
+            <div class="prd-title">PRD 文档预览</div>
             <div class="prd-actions">
-              <button class="solution-btn secondary" type="button" onclick="copyPrdMarkdown()">?? Markdown</button>
-              <button class="solution-btn primary" type="button" onclick="downloadPrdDocument()">?? Word (.doc)</button>
+              <button class="solution-btn secondary" type="button" onclick="copyPrdMarkdown()">复制 Markdown</button>
+              <button class="solution-btn primary" type="button" onclick="downloadPrdDocument()">下载 Word (.doc)</button>
             </div>
           </div>
           <div id="prdDocument" class="prd-doc"></div>

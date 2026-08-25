@@ -1,5 +1,5 @@
-import json, app
-text='?????????????????????????????'
+﻿import json, app
+text='仓库库存数据经常和实际不一致，业务下单的时候才发现没有货。'
 for name, fn in [('context', app.retrieve_context), ('fast_fallback', app.build_fast_fallback_from_context), ('analysis', app.build_context_analysis)]:
     print('\n##', name)
     res=fn(text)

@@ -1,0 +1,6 @@
+# Keep project text files encoded as UTF-8 in the working tree.
+*.json text eol=lf working-tree-encoding=UTF-8
+*.py   text eol=lf working-tree-encoding=UTF-8
+*.js   text eol=lf working-tree-encoding=UTF-8
+*.html text eol=lf working-tree-encoding=UTF-8
+*.md   text eol=lf working-tree-encoding=UTF-8
